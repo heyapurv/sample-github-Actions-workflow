@@ -4,10 +4,10 @@ name: "hello world Workflow"
 # controls when the action will run. This will trigger the workflow on push one to master or production branch
 
 on:
-    push:
-        branches:
-            - master 
-            - production
+    - push
+        # branches:
+        #     - master 
+        #     - production
 
 jobs:
     hello_world:
@@ -18,3 +18,6 @@ jobs:
             
             - name : "Print current date"
               run : date
+            
+            - name : "Print any branch push trigger done"
+            run: echo "Push trigger on any branch"
