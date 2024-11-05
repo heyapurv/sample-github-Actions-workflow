@@ -20,4 +20,4 @@ jobs:
               run : date
             
             - name : "Print any branch push trigger done"
-            run: echo "Push trigger on any branch"
+              run: echo "Push trigger on any branch"
